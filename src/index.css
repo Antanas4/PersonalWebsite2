@@ -7,8 +7,9 @@
   font-style: normal;
 }
 
-.body {
-  background-color: #070F2B;
+body {
+  background-color: #070a15;
+  background-color: #31363F;
   font-family: Neue-Hass;
+  color: white;
 }
-
