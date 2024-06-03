@@ -1,9 +1,11 @@
-import Navbar from './components/Navbar';
+import { NavigationBar } from './components/Navbar';
+import { SectionHome } from './components/Home'; 
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <NavigationBar/>
+      <SectionHome />
     </div>
   );
 }

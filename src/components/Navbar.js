@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 
-function NavigationBar() {
+export const NavigationBar = () => {
   return (
       <Navbar fixed="top" expand="lg" className="navbar">
         <Navbar.Brand href="#home" className="navbar-brand">
@@ -19,6 +19,4 @@ function NavigationBar() {
         </Navbar.Collapse>
       </Navbar>
   );
-}
-
-export default NavigationBar;
+};

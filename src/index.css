@@ -2,14 +2,17 @@
 
 @font-face {
   font-family: Neue-Hass;
-  src: url('../assets/fonts/neue-hass/NeueHaasDisplayLight.ttf');
+  src: url('../public/assets/fonts/neue-hass/NeueHaasDisplayLight.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   background-color: #070a15;
-  background-color: #31363F;
+  /* background-color: #31363F; */
   font-family: Neue-Hass;
   color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
