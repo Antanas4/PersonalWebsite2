@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Neue-Hass;
-  src: url('../public/assets/fonts/neue-hass/NeueHaasDisplayLight.ttf');
+  src: url('/src/assets/fonts/neue-hass/NeueHaasDisplayLight.ttf');
   font-weight: normal;
   font-style: normal;
 }
