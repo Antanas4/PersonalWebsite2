@@ -5,11 +5,11 @@ export const NavigationBar = () => {
   return (
       <Navbar fixed="top" expand="lg" className="navbar">
         <Navbar.Brand href="#home" className="navbar-brand">
-          AB___
+          A.B.Develops
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-collapse" />
         <Navbar.Collapse id="navbar-collapse" >
-          <Nav>
+          <Nav className="">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#profile">Profile</Nav.Link>
             <Nav.Link href="#experience">Experience</Nav.Link>

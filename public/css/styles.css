@@ -1,6 +1,6 @@
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, );
     width: 100%;
     position: fixed;
     top: 0;
@@ -15,25 +15,22 @@
     justify-content: flex-end;
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand, .navbar-nav .nav-link{
     color: rgb(255, 255, 255);
-    margin: 0rem 2rem;
-    font-size: 30px;
-    color: #6aa5c1;
-    /* color: #6aa5c1; */
-
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0rem 4rem;
 }
 
 .navbar-nav{
-    margin: 0rem 1rem;
+    margin: 0rem 4rem;
 }
 
 .navbar-nav .nav-link {
     margin: 0rem 1rem;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
     transition: transform 0.3s;
     letter-spacing: 0.1rem;
+    font-weight: 200;
 }
 
 .navbar-nav .nav-link:hover {
@@ -65,35 +62,34 @@
 }
 
 .header-content {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* background: linear-gradient(0deg, rgba(106,165,193,1) 5%, rgba(0,0,0,1) 40%); */
+    align-items: flex-start;
     height: 100vh;
+    text-align: left;
+    margin-left: 4rem;
 }
 
 
 .header-content h1{
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.3rem;
+    font-size: 80px;
+    font-weight: 350;
+    letter-spacing: 0.25rem;
+    margin: 0rem 0rem;
 }
 
 .header-content h2{
-    font-size: 3.5rem;
-    color: #93c2ce;
-    color: #c0ea56;
-    /* color: white; */
-    font-weight: bold;
-    margin-bottom: 1rem;
-    letter-spacing: 0.3rem;
+    font-size: 30px;
+    font-weight: 350;
+    color: white;
+    margin: 0rem 0rem;
 }
 
-.header-content h3{
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-    letter-spacing: 0.3rem;
+.header-content span{
+    color: #E74646;
+}
+
+span.navbar-toggler-icon{
+    color: white;
 }
