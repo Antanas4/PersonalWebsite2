@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-  font-family: Arial, Helvetica, sans-serif;
-  src: url('/src/assets/fonts/helvetica-neue-5/HelveticaNeueMedium.otf');
+  font-family: 'Neue-Hass';
+  src: url('/src/assets/fonts/neue-hass/NeueHaasDisplayLight.ttf');
 }
 
-body {
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url('/src/assets/fonts/helvetica-neue-5/HelveticaNeueLight.otf');
+}
+
+body, html {
+  /* font-family: 'Neue-Hass'; */
+  font-family: 'Helvetica-Neue';
   background-color:black;
   color: white;
+}
+
+.App {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: column; 
+  min-height: 100vh;  
 }

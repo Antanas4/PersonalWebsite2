@@ -1,11 +1,13 @@
 import { NavigationBar } from './components/Navbar';
-import { SectionHome } from './components/Home'; 
+import { Home } from './components/Home'; 
+import { Profile } from './components/Profile'; 
 
 function App() {
   return (
     <div className="App">
       <NavigationBar/>
-      <SectionHome />
+      <Home />
+      <Profile />
     </div>
   );
 }
