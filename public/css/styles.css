@@ -121,13 +121,24 @@
 
 #profile .main-text {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0vw 10vw;
-    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 0vw 27vw;
+    margin-top: 8vw;
+    margin-left: 8vw;
 }
+
+#profile .main-text::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
 
 #profile .main-text p {
     font-size: calc(1rem + 1vw);
-    line-height: 1.6; /* Example line height */
+    line-height: 1.6; 
+    text-align: justify;
+    border-left: solid 3px #E74646;
+    padding-left: 20px; 
 }
