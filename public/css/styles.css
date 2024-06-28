@@ -120,11 +120,12 @@
 }
 
 #profile .main-text {
+    position: relative;
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
     padding: 0vw 27vw;
-    margin-top: 8vw;
+    margin-top: 7vw;
     margin-left: 8vw;
 }
 
@@ -141,4 +142,32 @@
     text-align: justify;
     border-left: solid 3px #E74646;
     padding-left: 20px; 
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      #E74646, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+/* EXPERIENCE */
+#experience {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+#experience .header {
+    align-self: flex-start;
+    text-align: left;
+    width:fit-content;
+    margin-left: 4vw;
+}
+
+#experience .header h1 {
+    font-weight: 600;
+    font-size: calc(2.5rem + 3vw);
+    letter-spacing: 0.2rem;
 }

@@ -6,7 +6,7 @@ export const Profile = () => {
       {/* <div className="container"> */}
         <div className="profile-content">
           <div className="header">
-            <h1>PROFILE</h1>
+            <h1>*PROFILE</h1>
           </div>
           <div className="main-text">
             <p>
