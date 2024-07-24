@@ -1,4 +1,4 @@
-import { NavigationBar } from './components/Navbar';
+import  NavigationBar from './components/Navbar';
 import { Home } from './components/Home'; 
 import { Profile } from './components/Profile'; 
 import { Experience } from './components/Experience'; 

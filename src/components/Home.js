@@ -9,7 +9,7 @@ export const Home = () => {
           <h1>BUTELIAUSKAS</h1>
           <h2>
             {"{ "}
-            <span>junior software developer</span>
+            <span>software developer</span>
             {" }"}
           </h2>
         </div>
