@@ -1,20 +1,25 @@
 /* NAVIGATION BAR */
 /* Default navbar style */
+
 .navbar {
-    background-color: rgba(14, 14, 14, 0.8); /* Slightly transparent background */
+    background-color: rgba(14, 14, 14, 0.8);
+    /* Slightly transparent background */
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 100;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: subtle border */
-    transition: top 0.3s; /* Smooth transition effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Optional: subtle border */
+    transition: top 0.3s;
+    /* Smooth transition effect */
 }
 
 /* Navbar hidden style */
 .navbar-container.navbar-hidden .navbar {
-    top: -60px; /* Adjust based on your navbar height */
+    top: -60px;
+    /* Adjust based on your navbar height */
 }
 
 /* Navbar visible style (if needed, though this is the default) */
@@ -182,3 +187,78 @@
     font-size: calc(2.5rem + 3vw);
     letter-spacing: 0.2rem;
 }
+
+.timeline {
+    margin: 4em auto;
+    position: relative;
+    max-width: 46em;
+    list-style-type: none;
+    &:before {
+        background-color: rgb(60, 60, 60);
+        content: '';
+        margin-left: -1px;
+        position: absolute;
+        top: 1em;
+        left: 2em;
+        width: 2px;
+        height: 100%;
+        left: 4em;
+    }
+}
+
+.timeline-event {
+    position: relative;
+}
+
+.timeline-event-copy {
+    padding: 2em;
+    position: relative;
+    top: -1.875em;
+    left: 4em;
+    width: 80%;
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        margin-bottom: 1.2em;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    p:not(.timeline-event-thumbnail) {
+        padding-bottom: 1.2em;
+    }
+}
+
+.timeline-event-icon {
+    background-color: rgb(14,14,14);;
+    outline: 2px solid #E74646;
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
+
+.timeline-event-icon.current{
+    background-color: #E74646;
+}
+
+
+.timeline-event-thumbnail {
+    color: black;
+    font-size: 0.75em;
+    
+    background-color: #E74646;
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+  }

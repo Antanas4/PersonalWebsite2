@@ -5,26 +5,24 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState, useCallback } from "react";
 
 const NavigationBar = () => {
-  const [show, setShow] = useState(true); // Start with true to show the navbar on load
-  const [lastScrollY, setLastScrollY] = useState(0); // Track the last scroll position
+  const [show, setShow] = useState(true); 
+  const [lastScrollY, setLastScrollY] = useState(0); 
 
   const controlNavbar = useCallback(() => {
     if (window.scrollY > lastScrollY && window.scrollY > 20) {
-      // Scrolling down
       setShow(false);
     } else {
-      // Scrolling up
       setShow(true);
     }
-    setLastScrollY(window.scrollY); // Update last scroll position
-  }, [lastScrollY]); // Dependencies for useCallback
+    setLastScrollY(window.scrollY); 
+  }, [lastScrollY]); 
 
   useEffect(() => {
     window.addEventListener('scroll', controlNavbar);
     return () => {
       window.removeEventListener('scroll', controlNavbar);
     };
-  }, [controlNavbar]); // Include controlNavbar in dependency array
+  }, [controlNavbar]); 
 
   return (
     <div id='navigation-bar' className={`navbar-container ${show ? 'navbar-visible' : 'navbar-hidden'}`}>
