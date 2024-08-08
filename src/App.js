@@ -14,7 +14,7 @@ function App() {
       <Home />
       <Profile />
       <Experience />
-      <ContactButton onClick={handleContactClick} label="Contact Me"></ContactButton>
+      {/* <ContactButton onClick={handleContactClick} label="Contact Me"></ContactButton> */}
     </div>
   );
 }

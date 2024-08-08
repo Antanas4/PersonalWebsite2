@@ -8,7 +8,7 @@ export const Home = () => {
         <h1>BUTELIAUSKAS</h1>
         <h2>
           {"{ "}
-          <span>software developer</span>
+          <span>junior software developer</span>
           {" }"}
         </h2>
       </div>

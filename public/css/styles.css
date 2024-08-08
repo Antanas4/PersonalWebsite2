@@ -129,7 +129,7 @@
 /* PROFILE */
 #profile {
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
 }
@@ -148,35 +148,53 @@
 }
 
 #profile .profile-text-section{
-    margin: 4em 4em;
+    margin-top: 0em;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    background-color: white;
+    color: rgb(14,14,14);
 }
 
 #profile .text-left {
     position: relative;
     display: flex;
-    /* font-size: calc(1rem + 1vw); */
+    padding-left: 4.5em;
+    font-size: calc(1rem + 1vw);
+    font-weight: 1000;
+}
+
+#profile .text-right {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    padding-top: 3em;
+    padding-right: 5em;
+    font-size: calc(1rem + 1vw);
+    font-weight: 1000;
 }
 
 /* EXPERIENCE */
 #experience {
     position: relative;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    min-height: 100vh;
 }
 
 #experience .header {
-    align-self: flex-start;
-    text-align: left;
-    width: fit-content;
-    margin-left: 2.5rem;
+    padding-left: 3em;
+    background: white;
+    color: rgb(14,14,14);
+
 }
 
-#experience .header h1 {
-    /* font-weight: 600; */
+#experience .experience-text {
     font-size: calc(2.5rem + 3vw);
-    letter-spacing: 0.2rem;
+}
+
+#experience .star{
+    font-size: calc(3em + 6vw);
+    color: rgb(66, 99, 216);
 }
 
 .timeline {
@@ -213,10 +231,6 @@
         font-size: clamp(1.5rem, 2.5vw, 2rem);
     }
 
-    strong {
-        /* font-weight: 700; */
-    }
-
     p:not(.timeline-event-thumbnail) {
         padding-bottom: 1.2em;
         font-size: clamp(1rem, 2vw, 1.5rem);
@@ -226,8 +240,7 @@
 
 .timeline-event-icon {
     background-color: rgb(14, 14, 14);
-    ;
-    outline: 2px solid #E74646;
+    outline: 2px solid rgb(66, 99, 216);
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
     position: absolute;
@@ -239,18 +252,18 @@
 }
 
 .timeline-event-icon.current {
-    background-color: #E74646;
+    background-color: rgb(66, 99, 216);
 }
 
 
 .timeline-event-thumbnail {
-    color: #E74646;
-    border-color: #E74646;
+    color: rgb(66, 99, 216);
+    border-color: rgb(66, 99, 216);
     border-style: solid;
     border-width: 1px;
     font-size: 0.75em;
     border-radius: 25%;
-    background-color: rgb(14, 14, 14);
+    background-color: white;
     display: inline-block;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;

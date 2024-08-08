@@ -15,6 +15,10 @@ export const Profile = () => {
           I'm on a journey to transform ideas into <br></br>
           impactful digital solutions.
         </div>
+        <div className="text-right">
+          Ready to tackle challenges and <br></br>
+          contribute to your next big project.
+        </div>
       </div>
     </div>
   );
