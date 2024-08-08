@@ -6,7 +6,7 @@
 }
 
 
-.profiletextsection {
+.profileTextSection {
   margin-top: 0em;
   padding-top: 10em;
   padding-bottom: 10em;
@@ -30,4 +30,14 @@
   padding-right: 5em;
   font-size: calc(1rem + 1vw);
   font-weight: 1000;
+}
+
+.asterisk {
+  /* display: inline-block; */
+  color: white;
+  line-height: 20px;
+}
+
+.asterisk:before {
+  content: '✱'; /* This is a heavy asterisk, similar to your design */
 }

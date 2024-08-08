@@ -4,7 +4,7 @@ import styles from "./Experience.module.css";
 
 export const Experience = () => {
   return (
-    <div className={styles.experience}>
+    <div id="experience" className={styles.experience}>
       <Header className={styles.header} headerTitle = "EXPERIENCE"/>
       <ul className={styles.timeline}>
         <li className={styles.timelineEvent}>
@@ -21,9 +21,9 @@ export const Experience = () => {
           </div>
         </li>
         <li className={styles.timelineEvent}>
-          <label className="timeline-event-icon"></label>
-          <div className="timeline-event-copy">
-            <p className="timeline-event-thumbnail">2023/03 - 2023/05</p>
+          <label className={styles.timelineEventIcon}></label>
+          <div className={styles.timelineEventCopy}>
+            <p className={styles.timelineEventThumbnail}>2023/03 - 2023/05</p>
             <h3>Progress Developer Intern | Baltic Amadeus</h3>
             <p>
               While involved in the successful development of a web application,
