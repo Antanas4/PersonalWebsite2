@@ -1,19 +1,16 @@
 import React from "react";
+import Header from "./Header";
+import styles from "./Experience.module.css";
 
 export const Experience = () => {
   return (
-    <div id="experience">
-      <div className="header">
-        <h1>
-          <span className="star">*</span>
-          <span className="experience-text">EXPERIENCE</span>
-        </h1>
-      </div>
-      <ul className="timeline">
-        <li className="timeline-event">
-          <label className="timeline-event-icon current"></label>
-          <div className="timeline-event-copy">
-            <p className="timeline-event-thumbnail">2024/04 - Present</p>
+    <div className={styles.experience}>
+      <Header className={styles.header} headerTitle = "EXPERIENCE"/>
+      <ul className={styles.timeline}>
+        <li className={styles.timelineEvent}>
+          <label className={styles.timelineEventIconCurrent}></label>
+          <div className={styles.timelineEventCopy}>
+            <p className={styles.timelineEventThumbnail}>2024/04 - Present</p>
             <h3>Software Developer | VLK</h3>
             <p>
               I’m currently contributing to the development and maintenance of
@@ -23,7 +20,7 @@ export const Experience = () => {
             </p>
           </div>
         </li>
-        <li className="timeline-event">
+        <li className={styles.timelineEvent}>
           <label className="timeline-event-icon"></label>
           <div className="timeline-event-copy">
             <p className="timeline-event-thumbnail">2023/03 - 2023/05</p>

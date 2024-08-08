@@ -76,6 +76,19 @@
     }
 }
 
+.header{
+    margin: 3em;
+}
+
+.header-text{
+    font-size: calc(2.5rem + 3vw);
+}
+
+.header-star{
+    font-size: calc(3em + 6vw);
+    color: rgb(66, 99, 216);
+}
+
 /* CONTACT BUTTON */
 .contact-btn {
     position: fixed;
@@ -124,147 +137,4 @@
 
 #home .header-content h2 span {
     color: rgb(66, 99, 216);
-}
-
-/* PROFILE */
-#profile {
-    position: relative;
-    /* min-height: 100vh; */
-    display: flex;
-    flex-direction: column;
-}
-
-#profile .header {
-    margin: 3em;
-}
-
-#profile .profile-text {
-    font-size: calc(2.5rem + 3vw);
-}
-
-#profile .star{
-    font-size: calc(3em + 6vw);
-    color: rgb(66, 99, 216);
-}
-
-#profile .profile-text-section{
-    margin-top: 0em;
-    padding-top: 10em;
-    padding-bottom: 10em;
-    background-color: white;
-    color: rgb(14,14,14);
-}
-
-#profile .text-left {
-    position: relative;
-    display: flex;
-    padding-left: 4.5em;
-    font-size: calc(1rem + 1vw);
-    font-weight: 1000;
-}
-
-#profile .text-right {
-    position: relative;
-    display: flex;
-    justify-content: right;
-    padding-top: 3em;
-    padding-right: 5em;
-    font-size: calc(1rem + 1vw);
-    font-weight: 1000;
-}
-
-/* EXPERIENCE */
-#experience {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-#experience .header {
-    padding-left: 3em;
-    background: white;
-    color: rgb(14,14,14);
-
-}
-
-#experience .experience-text {
-    font-size: calc(2.5rem + 3vw);
-}
-
-#experience .star{
-    font-size: calc(3em + 6vw);
-    color: rgb(66, 99, 216);
-}
-
-.timeline {
-    margin: 4em auto;
-    position: relative;
-    max-width: 46em;
-    list-style-type: none;
-
-    &:before {
-        background-color: rgb(60, 60, 60);
-        content: '';
-        margin-left: -1px;
-        position: absolute;
-        top: 1em;
-        left: 2em;
-        width: 2px;
-        height: 85%;
-        left: 4em;
-    }
-}
-
-.timeline-event {
-    position: relative;
-}
-
-.timeline-event-copy {
-    padding: 2em;
-    position: relative;
-    top: -1.875em;
-    left: 4em;
-    width: 100%;
-
-    h3 {
-        font-size: clamp(1.5rem, 2.5vw, 2rem);
-    }
-
-    p:not(.timeline-event-thumbnail) {
-        padding-bottom: 1.2em;
-        font-size: clamp(1rem, 2vw, 1.5rem);
-        color: rgb(173, 173, 173);
-    }
-}
-
-.timeline-event-icon {
-    background-color: rgb(14, 14, 14);
-    outline: 2px solid rgb(66, 99, 216);
-    display: block;
-    margin: 0.5em 0.5em 0.5em -0.5em;
-    position: absolute;
-    top: 0;
-    left: 2em;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-}
-
-.timeline-event-icon.current {
-    background-color: rgb(66, 99, 216);
-}
-
-
-.timeline-event-thumbnail {
-    color: rgb(66, 99, 216);
-    border-color: rgb(66, 99, 216);
-    border-style: solid;
-    border-width: 1px;
-    font-size: 0.75em;
-    border-radius: 25%;
-    background-color: white;
-    display: inline-block;
-    margin-bottom: 1.2em;
-    padding: 0.25em 1em 0.2em 1em;
 }

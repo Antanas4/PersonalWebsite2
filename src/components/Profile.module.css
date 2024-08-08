@@ -1,0 +1,33 @@
+/* PROFILE */
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.profiletextsection {
+  margin-top: 0em;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  background-color: white;
+  color: rgb(14, 14, 14);
+}
+
+.textLeft {
+  position: relative;
+  display: flex;
+  padding-left: 4.5em;
+  font-size: calc(1rem + 1vw);
+  font-weight: 1000;
+}
+
+.textRight {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  padding-top: 3em;
+  padding-right: 5em;
+  font-size: calc(1rem + 1vw);
+  font-weight: 1000;
+}

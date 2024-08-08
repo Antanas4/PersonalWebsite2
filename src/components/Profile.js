@@ -1,24 +1,24 @@
 import React from "react";
+import Header from "./Header";
+import TextBox from "./textBox";
+import styles from "./Profile.module.css"; // Import CSS module
 
 export const Profile = () => {
   return (
-    <div id="profile">
-      <div className="header">
-        <h1>
-          <span className="star">*</span>
-          <span className="profile-text">PROFILE</span>
-        </h1>
-      </div>
-      <div className="profile-text-section">
-        <div className="text-left">
-          Passionate about coding and innovation,<br></br>
-          I'm on a journey to transform ideas into <br></br>
-          impactful digital solutions.
-        </div>
-        <div className="text-right">
-          Ready to tackle challenges and <br></br>
-          contribute to your next big project.
-        </div>
+    <div className={styles.profile}>
+      <Header headerTitle="PROFILE" />
+      <div className={styles.profiletextsection}>
+        <TextBox
+          className={styles.textLeft}
+          text="Passionate about coding and innovation,
+          I'm on a journey to transform ideas into
+          impactful digital solutions."
+        />
+        <TextBox
+          className={styles.textRight}
+          text="Ready to tackle challenges and <br></br>
+          contribute to your next big project"
+        />
       </div>
     </div>
   );
