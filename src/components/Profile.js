@@ -7,8 +7,10 @@ import Asterisk from "./AsteriskSymbol";
 export const Profile = () => {
   return (
     <div id="profile"className={styles.profile}>
+      <div className={styles.asteriskContainer}>
+        <Asterisk className={styles.asterisk} />
+      </div>
       <Header headerTitle="PROFILE" />
-      <Asterisk className={styles.asterisk} />
       <div className={styles.profileTextSection}>
         <TextBox
           className={styles.textLeft}
