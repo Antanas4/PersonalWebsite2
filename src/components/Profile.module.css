@@ -31,39 +31,3 @@
   font-size: calc(1rem + 1vw);
   font-weight: 1000;
 }
-
-.asteriskContainer {
-  position: relative;
-  display: flex;
-  justify-content: right;
-}
-
-.asterisk {
-  position: relative;
-  font-size: calc(10em + 10vw);
-  width: 1em; 
-  height: 1em; 
-  color: black;
-}
-
-.asterisk:before,
-.asterisk:after {
-  content: '✱';
-  position: absolute; /* Make sure both are absolutely positioned */
-  top: 15rem;
-  left: 0;
-  /* width: 100%; */
-  /* height: 100%; */
-  font-size: inherit; /* Ensures the pseudo-elements use the parent's font size */
-}
-
-.asterisk:before {
-  clip-path: polygon(0 0, 100% 0, 100% 53%, 0 53%); /* Covers the top 55% */
-  color: white;
-}
-
-.asterisk:after {
-  clip-path: polygon(0 52%, 100% 52%, 100% 100%, 0 100%); /* Starts from 55% to the bottom */
-  color: rgb(14, 14, 14);
-}
-
