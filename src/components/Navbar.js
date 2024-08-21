@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState, useCallback } from "react";
 
-const NavigationBar = () => {
+function NavigationBar (){
   const [show, setShow] = useState(true); 
   const [lastScrollY, setLastScrollY] = useState(0); 
 

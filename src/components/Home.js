@@ -1,6 +1,7 @@
 import React from "react";
 
-export const Home = () => {
+
+function Home (){
   return (
     <div id="home">
       <div className="header-content">
@@ -15,3 +16,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

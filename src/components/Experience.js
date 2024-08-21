@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import styles from "./Experience.module.css";
 
-export const Experience = () => {
+function Experience (){
   return (
     <div id="experience" className={styles.experience}>
       <Header className={styles.header} headerTitle = "EXPERIENCE"/>
@@ -37,3 +37,5 @@ export const Experience = () => {
     </div>
   );
 };
+
+export default Experience;

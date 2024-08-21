@@ -1,14 +1,18 @@
 import React from "react";
 import Header from "./Header";
 import TextBox from "./textBox";
-import styles from "./Profile.module.css"; // Import CSS module
+import styles from "./Profile.module.css";
 import Asterisk from "./AsteriskSymbol";
 
-export const Profile = () => {
+function Profile() {
   return (
     <div id="profile" className={styles.profile}>
       <Header headerTitle="PROFILE" />
-      <Asterisk />
+      <Asterisk
+        className={styles.asterisk}
+        topHalfClassName={styles.topHalf}
+        bottomHalfClassName={styles.bottomHalf}
+      />
       <div className={styles.profileTextSection}>
         <TextBox
           className={styles.textLeft}
@@ -24,4 +28,6 @@ export const Profile = () => {
       </div>
     </div>
   );
-};
+}
+
+export default Profile;

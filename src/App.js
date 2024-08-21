@@ -1,8 +1,7 @@
 import  NavigationBar from './components/Navbar';
-import { Home } from './components/Home'; 
-import { Profile } from './components/Profile'; 
-import { Experience } from './components/Experience'; 
-import ContactButton from './components/ContactButton';
+import Home from './components/Home'; 
+import Profile from './components/Profile'; 
+import Experience from './components/Experience'; 
 
 function App() {
   const handleContactClick = () => {
@@ -14,7 +13,6 @@ function App() {
       <Home />
       <Profile />
       <Experience />
-      {/* <ContactButton onClick={handleContactClick} label="Contact Me"></ContactButton> */}
     </div>
   );
 }
