@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-  font-family: 'Neue-Hass';
-  src: url('/src/assets/fonts/neue-hass/NeueHaasDisplayLight.ttf');
-}
-
-@font-face {
   font-family: 'Helvetica-Neue';
   src: url('/src/assets/fonts/helvetica-neue-5/HelveticaNeueLight.otf');
 }
@@ -15,8 +10,6 @@
 }
 
 body, html {
-  /* font-family: 'Neue-Hass'; */
-  /* font-family: 'Helvetica-Neue'; */
   font-family: 'Hiragino-Kaku';
   background-color: rgb(14,14,14);
   color: rgb(240,240,240);

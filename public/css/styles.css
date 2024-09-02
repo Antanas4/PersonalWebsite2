@@ -27,25 +27,25 @@
 }
 
 #navigation-bar .navbar-nav .nav-link {
-    color: rgb(255, 255, 255);
+    color: rgb(240, 240, 240);
     font-size: 16px;
-    margin: 0rem 4rem;
 }
 
 #navigation-bar .navbar-brand {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    margin-left: 4rem;
+    color: rgb(240, 240, 240);
+    margin-left: 2em;
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
 }
 
 #navigation-bar .navbar-nav {
-    margin: 0rem 4rem;
+    margin: 0em 2em;
 }
 
 #navigation-bar .navbar-nav .nav-link {
-    margin: 0rem 1rem;
+    margin: 0em 0.8em;
     transition: transform 0.3s;
-    letter-spacing: 0.1rem;
 }
 
 #navigation-bar .navbar-nav .nav-link:hover {
@@ -74,67 +74,4 @@
         max-height: 0;
         overflow: hidden;
     }
-}
-
-.header{
-    margin: 3em;
-}
-
-.header-text{
-    font-size: calc(2.5rem + 3vw);
-}
-
-.header-star{
-    font-size: calc(3em + 6vw);
-    color: rgb(66, 99, 216);
-}
-
-/* CONTACT BUTTON */
-.contact-btn {
-    position: fixed;
-    bottom: 35px;
-    right: 35px;
-    width: 110px;
-    height: 100px;
-    background-color: rgb(129, 179, 21);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-    font-size: 14px;
-    letter-spacing: 0.075rem;
-}
-
-.contact-btn:hover {
-    background-color: rgb(34, 67, 186) 
-  }
-
-/* HOME */
-
-#home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-}
-
-#home .header-content h1,
-#home .header-content h2 {
-    font-size: calc(2.5rem + 3vw);
-    letter-spacing: 0.1rem;
-}
-
-#home .header-content h2 {
-    display: inline-block;
-    font-size: calc(1rem + 1vw);
-}
-
-#home .header-content h2 span {
-    color: rgb(66, 99, 216);
 }

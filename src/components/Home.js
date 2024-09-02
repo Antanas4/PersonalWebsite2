@@ -1,10 +1,11 @@
 import React from "react";
-
+import Logo from "./Logo";
+import styles from "./Home.module.css";
 
 function Home (){
   return (
-    <div id="home">
-      <div className="header-content">
+    <div className={styles.home}>
+      <div className={styles.headerContent}>
         <h1>ANTANAS</h1>
         <h1>BUTELIAUSKAS</h1>
         <h2>

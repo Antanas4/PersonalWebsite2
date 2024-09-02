@@ -1,0 +1,28 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.headerContent h1,
+.headerContent h2 {
+    font-size: calc(2.5rem + 3vw);
+    letter-spacing: 0.1rem;
+}
+
+.headerContent h2 {
+    display: inline-block;
+    font-size: calc(1rem + 1vw);
+}
+
+.headerContent h2 span {
+    color: rgb(66, 99, 216);
+}
+
+.logo{
+    fill: white;
+    height: 400px;
+
+}

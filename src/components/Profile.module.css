@@ -3,50 +3,42 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  color: rgb(240, 240, 240);
+  min-height: 100vh;
 }
 
+.header {
+  margin: 2em 2em;
+  padding: 0em;
+}
 
-.profileTextSection {
-  margin-top: 0em;
+.headerText {
+  font-size: calc(1em + 3vw);
+}
+
+.profileContainer {
+  background-color: rgb(240, 240, 240);
+  color: rgb(14, 14, 14);
   padding-top: 10em;
   padding-bottom: 10em;
-  background-color: white;
-  color: rgb(14, 14, 14);
 }
 
-.textLeft {
+.profileText{
+  display: flex;
   position: relative;
-  display: flex;
-  padding-left: 4.5em;
-  font-size: calc(1rem + 1vw);
-  font-weight: 1000;
+  justify-content: center;
+  font-family: 'Arial' ;
+  font-size: 20px;
 }
 
-.textRight {
+
+.profileImageContainer {
+  display: flex;
   position: relative;
-  display: flex;
-  justify-content: right;
-  padding-top: 3em;
-  padding-right: 5em;
-  font-size: calc(1rem + 1vw);
-  font-weight: 1000;
+  justify-content: center;
 }
 
-.asterisk{
-  position: absolute;
-  top:83px;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  width: calc(8em + 8vw);
-  height: calc(8em + 8vw);
-
-}
-
-.topHalf{
-  fill: rgb(255, 255, 255);
-}
-
-.bottomHalf{
-  fill: rgb(14, 14, 14);
+.profileImageContainer img {
+  max-width: 100%;
+  height: auto;
 }

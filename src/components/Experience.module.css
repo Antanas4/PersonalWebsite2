@@ -7,8 +7,8 @@
 }
 
 .header{
-    padding-top: 6em;
-    background-color: white;
+    padding-top: 0em;
+    background-color: rgb(240, 240, 240);
     color: rgb(14, 14, 14);
     margin: 0;
 }

@@ -1,36 +1,44 @@
-import React from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useState, useCallback } from "react";
+import Logo from "./Logo.js"
+import styles from './Navbar.module.css';
 
-function NavigationBar (){
-  const [show, setShow] = useState(true); 
-  const [lastScrollY, setLastScrollY] = useState(0); 
+function NavigationBar() {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+  const handleToggle = () => {
+    setIsCollapsed(!isCollapsed);
+  };
 
   const controlNavbar = useCallback(() => {
-    if (window.scrollY > lastScrollY && window.scrollY > 20) {
+    if (isCollapsed && window.scrollY > lastScrollY && window.scrollY > 20) {
       setShow(false);
     } else {
       setShow(true);
     }
-    setLastScrollY(window.scrollY); 
-  }, [lastScrollY]); 
+    setLastScrollY(window.scrollY);
+  }, [lastScrollY, isCollapsed]);
 
   useEffect(() => {
     window.addEventListener('scroll', controlNavbar);
     return () => {
       window.removeEventListener('scroll', controlNavbar);
     };
-  }, [controlNavbar]); 
+  }, [controlNavbar]);
 
   return (
-    <div id='navigation-bar' className={`navbar-container ${show ? 'navbar-visible' : 'navbar-hidden'}`}>
+    <div id="navigation-bar" className={`navbar-container ${show ? 'navbar-visible' : 'navbar-hidden'}`}>
       <Navbar fixed="top" expand="lg" className="navbar">
         <Navbar.Brand href="#home" className="navbar-brand">
-          A.B.Develops
+          <Logo 
+            className={styles.logoContainer}
+          />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-collapse">
+        <Navbar.Toggle aria-controls="navbar-collapse" onClick={handleToggle}>
           <FontAwesomeIcon icon={faBars} style={{ color: "#E74646" }} />
         </Navbar.Toggle>
         <Navbar.Collapse id="navbar-collapse">
@@ -45,6 +53,6 @@ function NavigationBar (){
       </Navbar>
     </div>
   );
-};
+}
 
 export default NavigationBar;
