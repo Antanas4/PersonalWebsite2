@@ -14,7 +14,6 @@
 .headerText {
     font-size: calc(1em + 3vw);
     display: inline-block;
-    border-bottom: 1px solid;
     line-height: 1.2em;
 }
 

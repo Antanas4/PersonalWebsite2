@@ -7,7 +7,7 @@ function Experience() {
     <div id="experience" className={styles.experience}>
       <Header 
       className={styles.header} 
-      headerTitle="EXPERIENCE" 
+      headerTitle="experience" 
       headerText={styles.headerText}
       />
       <ul className={styles.timeline}>

@@ -11,7 +11,7 @@ function Profile() {
     <div id="profile" className={styles.profile}>
       <Header
         className={styles.header}
-        headerTitle="PROFILE"
+        headerTitle="profile"
         headerText={styles.headerText}
       />
       <div className={styles.profileContainer}>

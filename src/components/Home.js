@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "./Logo";
 import styles from "./Home.module.css";
 
 function Home() {
@@ -9,7 +8,11 @@ function Home() {
         <h1>antanas</h1>
         <h1>buteliauskas</h1>
       </div>
-      <div className={styles.rightText}></div>
+      <div className={styles.dot}></div>
+      <div className={styles.rightText}>
+        <h1>software developer</h1>
+      </div>
+
     </div>
   );
 }
