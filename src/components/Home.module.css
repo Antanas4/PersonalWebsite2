@@ -1,28 +1,38 @@
+:root {
+    --header-height: 60px;
+    /* Example header height */
+}
+
 .home {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* Align content to the top */
+    min-height: calc(100vh - var(--header-height));
+    /* Adjust for a fixed header, if any */
+    padding-top: 2em;
+    padding-bottom: 2em;
+    /* Add padding to manage spacing */
+    text-align: left;
+    color: rgb(219, 219, 219);
 }
 
-.headerContent h1,
-.headerContent h2 {
-    font-size: calc(2.5rem + 3vw);
-    letter-spacing: 0.1rem;
+.leftText h1 {
+    font-size: calc(2em + 2vw);
+    /* A more balanced calc for responsiveness */
+    margin: 0;
 }
 
-.headerContent h2 {
-    display: inline-block;
-    font-size: calc(1rem + 1vw);
-}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .home {
+        align-items: center;
+        /* Center align on smaller screens if needed */
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 
-.headerContent h2 span {
-    color: rgb(66, 99, 216);
-}
-
-.logo{
-    fill: white;
-    height: 400px;
-
+    .leftText h1 {
+        font-size: calc(1.5em + 3vw);
+    }
 }

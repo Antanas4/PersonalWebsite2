@@ -2,17 +2,21 @@ import React from "react";
 import Header from "./Header";
 import styles from "./Experience.module.css";
 
-function Experience (){
+function Experience() {
   return (
     <div id="experience" className={styles.experience}>
-      <Header className={styles.header} headerTitle = "EXPERIENCE"/>
+      <Header 
+      className={styles.header} 
+      headerTitle="EXPERIENCE" 
+      headerText={styles.headerText}
+      />
       <ul className={styles.timeline}>
         <li className={styles.timelineEvent}>
           <label className={styles.timelineEventIconCurrent}></label>
           <div className={styles.timelineEventCopy}>
             <p className={styles.timelineEventThumbnail}>2024/04 - Present</p>
             <h3>Software Developer | VLK</h3>
-            <p>
+            <p className={styles.jobDescription}>
               I’m currently contributing to the development and maintenance of
               software solutions, while also assisting in debugging and
               troubleshooting issues to ensure smooth operation of internal
@@ -36,6 +40,6 @@ function Experience (){
       </ul>
     </div>
   );
-};
+}
 
 export default Experience;

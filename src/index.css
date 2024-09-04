@@ -8,15 +8,19 @@
   font-family: 'Hiragino-Kaku';
   src: url('/src/assets/fonts/hiragino-kaku-gothic-pro/hiragino-kaku-gothic-pro-w3.otf');
 }
+*{
+  box-sizing: border-box;
+}
 
 body, html {
   font-family: 'Hiragino-Kaku';
   background-color: rgb(14,14,14);
   color: rgb(240,240,240);
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   display: flex;
   flex-direction: column; 
-  min-height: 100vh;  
 }
