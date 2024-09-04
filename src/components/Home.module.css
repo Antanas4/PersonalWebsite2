@@ -40,7 +40,7 @@
 
 .rightText {
     display: flex;
-    flex-direction: row; /* Ensure items are in a row */
+    flex-direction: row; 
     text-align: end;
     padding-top: 30em;
     padding-right: 2em;
