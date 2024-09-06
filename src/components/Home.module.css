@@ -1,26 +1,11 @@
-:root {
-    --header-height: 60px;
-}
 
 .home {
     display: flex;
+    align-items: center;
     position: relative;
     width: 100%;
     height: 900px;
-}
 
-.leftText {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 10em;
-    padding-left: 2em;;
-}
-
-.leftText h1 {
-    font-size: calc(2.6em + 4vw);
-    margin: 0;
-    line-height: 1.3em;
 }
 
 .dot {
@@ -38,15 +23,24 @@
     transform: translate(-50%, -50%); 
 }
 
-.rightText {
-    display: flex;
-    flex-direction: row; 
-    text-align: end;
-    padding-top: 30em;
-    padding-right: 2em;
+.nameContainer{
+    text-align: start;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    width: 100%;
 }
 
-.rightText h1 {
-    font-size: calc(2.6em + 4vw);
-    line-height: 1.3em;
+.nameContainer h1{
+    font-size: calc(3em + 3vw);
+    line-height: 1.2;
+}
+
+.positionContainer{
+    text-align: right;
+    padding-top: 20em;
+    padding-left: 5em;
+}
+
+.positionContainer h1{
+    font-size: calc(3em + 3vw);
 }
