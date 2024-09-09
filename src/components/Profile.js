@@ -1,10 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import TextBox from "./textBox";
 import ProfileImage from "./ProfileImage";
 import styles from "./Profile.module.css";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 function Profile() {
   return (

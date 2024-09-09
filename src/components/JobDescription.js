@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 function JobDescription({ dateRange, jobTitle, company, description, detailsStyle, descriptionStyle, jobContainer}) {
   return (
