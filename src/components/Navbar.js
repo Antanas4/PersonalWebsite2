@@ -3,7 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Logo from "./Logo.js"
-import styles from './Navbar.module.css';
+import styles from '../css/Navbar.module.css';
 
 function NavigationBar() {
   const [show, setShow] = useState(true);
@@ -39,7 +39,7 @@ function NavigationBar() {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-collapse" onClick={handleToggle}>
-          <FontAwesomeIcon icon={faBars} style={{ color: "#E74646" }} />
+          <FontAwesomeIcon icon={faBars} style={{ color: "#FFFFFF" }} />
         </Navbar.Toggle>
         <Navbar.Collapse id="navbar-collapse">
           <Nav className="ml-auto">

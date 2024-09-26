@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import styles from "./Experience.module.css";
+import styles from "../css/Experience.module.css";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import Container from "react-bootstrap/Container";

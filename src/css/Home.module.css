@@ -1,0 +1,147 @@
+.home {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.dot {
+    width: calc(2em + 2vw);
+    height: calc(2em + 2vw);
+    border-radius: 50%;
+    background-color: rgb(219, 219, 219);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nameCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    padding-top: 8em;
+    padding-left: 4em;
+
+}
+
+.nameCol h1,
+.positionCol h1 {
+    font-size: calc(3.5em + 3.5vw);
+    line-height: 1.2;
+}
+
+.positionCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 4em;
+    padding-bottom: 4em;
+}
+
+/* mobile phones */
+@media (max-width: 575px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .nameCol {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nameCol h1 {
+        font-size: calc(2.5em + 3.5vw);
+        line-height: 1.2;
+        text-align: center;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .positionCol {
+        padding: 0;
+        margin: 0;
+    }
+
+    .positionCol h1 {
+        font-size: calc(1.5em + 1.5vw);
+        line-height: 1.2;
+    }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .nameCol {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nameCol h1 {
+        font-size: calc(2.5em + 3.5vw);
+        line-height: 1.2;
+        text-align: center;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .positionCol {
+        padding: 0;
+        margin: 0;
+    }
+
+    .positionCol h1 {
+        font-size: calc(1.5em + 1.5vw);
+        line-height: 1.2;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .nameCol h1,
+    .positionCol h1 {
+        font-size: calc(2.5em + 3vw);
+        line-height: 1.2;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .nameCol h1,
+    .positionCol h1 {
+        font-size: calc(3em + 3vw);
+        line-height: 1.2;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
